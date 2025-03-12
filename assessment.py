@@ -102,6 +102,40 @@ class VulnerabilityAssessment:
         # Placeholder for real threat intelligence integration
         self.details['threat_intelligence'] = "Simulated threat intelligence risk: 1"
         return RISK_WEIGHTS.get('threat_intel', 1)
+    def assess_event_logs(self):
+        risk = 0
+        logs = self.data.get('event_logs', {})
+        event_risk_details = {"windows": [], "linux": []}
+
+        if logs:
+            # Windows Event Log Risk Check
+            if isinstance(logs, dict) and "Security" in logs:
+                for log in logs.get("Security", []):
+                    if isinstance(log, dict):
+                        eid = log.get("EventID")
+                        if eid == 4625:
+                            risk += 2
+                            event_risk_details["windows"].append(f"Failed login attempt (EventID {eid})")
+                        elif eid == 1102:
+                            risk += 5
+                            event_risk_details["windows"].append("Audit logs cleared (EventID 1102)")
+                        elif eid == 4688:
+                            risk += 2
+                            event_risk_details["windows"].append("Process execution logged (EventID 4688)")
+
+            # Linux Syslog Risk Check
+            for log_type, lines in logs.items():
+                if isinstance(lines, list):
+                    for line in lines:
+                        if "Failed password" in line:
+                            risk += 2
+                            event_risk_details["linux"].append("Failed SSH login detected")
+                        elif "sudo" in line and "authentication failure" in line:
+                            risk += 2
+                            event_risk_details["linux"].append("Sudo auth failure")
+
+        self.details["event_log_flags"] = event_risk_details
+        return risk
 
     def compute_risk_score(self):
         self.risk_score += self.assess_processes()
@@ -110,6 +144,7 @@ class VulnerabilityAssessment:
         self.risk_score += self.assess_registry()
         self.risk_score += self.assess_nmap_vulnerabilities()
         self.risk_score += self.assess_threat_intel()
+        self.risk_score += self.assess_event_logs()
         return self.risk_score
 
     def get_severity(self):

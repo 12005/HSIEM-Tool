@@ -8,6 +8,7 @@ from utils import verify_digital_signature
 
 if platform.system() == "Windows":
     import winreg
+    import win32evtlog
 else:
     winreg = None
 
@@ -115,11 +116,61 @@ class DataCollector:
             self.data['nmap_scan'] = {'error': str(e)}
             return {'error': str(e)}
 
+    def grab_windows_event_logs(self, log_type="Security", max_entries=50):
+        logs = []
+        server = 'localhost'
+        try:
+            hand = win32evtlog.OpenEventLog(server, log_type)
+            flags = win32evtlog.EVENTLOG_BACKWARDS_READ | win32evtlog.EVENTLOG_SEQUENTIAL_READ
+            events = win32evtlog.ReadEventLog(hand, flags, 0)
+            count = 0
+            for ev_obj in events:
+                entry = {
+                    "EventID": ev_obj.EventID,
+                    "TimeGenerated": str(ev_obj.TimeGenerated),
+                    "SourceName": ev_obj.SourceName,
+                    "EventCategory": ev_obj.EventCategory,
+                    "EventType": ev_obj.EventType,
+                }
+                logs.append(entry)
+                count += 1
+                if count >= max_entries:
+                    break
+        except Exception as e:
+            logs.append({"error": str(e)})
+        return logs
+
+    def grab_linux_logs(self, log_file="/var/log/auth.log", max_lines=100):
+        logs = []
+        try:
+            with open(log_file, "r") as f:
+                lines = f.readlines()[-max_lines:]
+                for line in lines:
+                    logs.append(line.strip())
+        except Exception as e:
+            logs.append(f"Error reading log: {str(e)}")
+        return logs
+
+    def collect_event_logs(self):
+        if platform.system() == "Windows":
+            self.data['event_logs'] = {
+                "Security": self.grab_windows_event_logs("Security"),
+                "System": self.grab_windows_event_logs("System"),
+                "Application": self.grab_windows_event_logs("Application")
+            }
+        else:
+            self.data['event_logs'] = {
+                "auth.log": self.grab_linux_logs("/var/log/auth.log"),
+                "syslog": self.grab_linux_logs("/var/log/syslog")
+            }
+        return self.data['event_logs']
+
     def collect_all(self):
         self.collect_processes()
         self.collect_network()
         self.verify_digital_signatures_in_test()
         self.scan_with_nmap()
+        self.collect_event_logs()
         if platform.system() == "Windows":
             self.audit_registry()
         return self.data
