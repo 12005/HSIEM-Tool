@@ -41,55 +41,61 @@ def create_dashboard(app, latest_report):
             </div>
 
            <div class="section">
-                <h2 class="mb-4"><i class="fas fa-calculator"></i> Risk Score Breakdown</h2>
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <strong>Suspicious Processes:</strong>
-                                <span class="badge badge-secondary">{{ report.details.suspicious_processes | length }}</span>
-                                × <code>5 pts</code>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Abnormal Behavior Flags:</strong>
-                                <span class="badge badge-secondary">{{ report.details.behavioral_flags | length }}</span>
-                                × <code>2 pts</code>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Unusual High Ports:</strong>
-                                <span class="badge badge-secondary">{{ report.details.unusual_ports | length }}</span>
-                                × <code>1 pt</code>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Excessive Open Ports:</strong>
-                                {{ report.details.open_ports | length }} open {% if report.details.open_ports | length > 10 %} → +<code>3 pts</code>{% else %}(no impact){% endif %}
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Failed Digital Signatures:</strong>
-                                <span class="badge badge-secondary">{{ report.details.failed_digital_signatures | length }}</span>
-                                × <code>2 pts</code>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Unknown Registry Entries:</strong>
-                                <span class="badge badge-secondary">{{ report.details.unknown_startup_items | length }}</span>
-                                × <code>2 pts</code>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Nmap Vulnerabilities:</strong>
-                                <span class="badge badge-secondary">{{ report.details.nmap_vulnerabilities | length }}</span>
-                                × <code>3 pts</code>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Event Log Flags:</strong> {% if report.details.event_log_flags.windows or report.details.event_log_flags.linux %}+ dynamic risk based on failed logins/system events{% else %}No impact{% endif %}
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Threat Intelligence:</strong>
-                                + <code>1 pt</code> (baseline risk)
-                            </li>
-                        </ul>
+            <h2 class="mb-4"><i class="fas fa-calculator"></i> Risk Score Breakdown</h2>
+            <p class="text-muted">Based on <strong>NIST SP 800-30</strong> model: <code>Risk = Threat × Vulnerability × Impact</code></p>
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <strong>Suspicious Processes:</strong>
+                            <span class="badge badge-secondary">{{ report.details.suspicious_processes | length }}</span>
+                            (Scored using high Threat × high Vulnerability × medium Impact)
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Abnormal Behavior Flags:</strong>
+                            <span class="badge badge-secondary">{{ report.details.behavioral_flags | length }}</span>
+                            (Scored using medium Threat × medium Vulnerability × low Impact)
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Unusual High Ports:</strong>
+                            <span class="badge badge-secondary">{{ report.details.unusual_ports | length }}</span>
+                            (Scored using medium Threat × medium Vulnerability × medium Impact)
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Excessive Open Ports:</strong>
+                            {{ report.details.open_ports | length }} open {% if report.details.open_ports | length > 10 %} → High Risk{% else %}(low risk){% endif %}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Failed Digital Signatures:</strong>
+                            <span class="badge badge-secondary">{{ report.details.failed_digital_signatures | length }}</span>
+                            (Scored using low Threat × high Vulnerability × medium Impact)
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Unknown Registry Entries:</strong>
+                            <span class="badge badge-secondary">{{ report.details.unknown_startup_items | length }}</span>
+                            (Scored using medium Threat × medium Vulnerability × medium Impact)
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Nmap Vulnerabilities:</strong>
+                            <span class="badge badge-secondary">{{ report.details.nmap_vulnerabilities | length }}</span>
+                            (Scored using high Threat × high Vulnerability × high Impact)
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Event Log Flags:</strong>
+                            {% if report.details.event_log_flags.windows or report.details.event_log_flags.linux %}
+                                Dynamic risk from system events (e.g., Failed Logins, Audit Log Clears)
+                            {% else %}
+                                No impact
+                            {% endif %}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Threat Intelligence:</strong>
+                            (Baseline threat score based on simulated intel)
+                        </li>
+                    </ul>
                     </div>
                 </div>
-            </div>
+        </div>
 
             <div class="section">
                 <h2>Risk Score Trend (Historical)</h2>
