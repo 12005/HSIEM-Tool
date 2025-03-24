@@ -1,3 +1,5 @@
+# config_risk.py
+
 # Risk Weights Configuration
 RISK_WEIGHTS = {
     'suspicious_process': 5,

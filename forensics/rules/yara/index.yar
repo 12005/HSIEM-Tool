@@ -1,0 +1,5 @@
+include "./malware/generic_malware.yar"
+include "./ransomware/ransomware_detection.yar"
+include "./webshells/webshell_detection.yar"
+include "./exploits/exploit_detection.yar"
+include "./suspicious/suspicious_behaviors.yar" 

@@ -1,151 +1,1627 @@
 {
-    "risk_score": 904,
+    "risk_score": 100,
     "severity": "High",
     "details": {
         "suspicious_processes": [],
-        "behavioral_flags": [],
+        "registry_anomalies": [],
+        "known_safe_items": [
+            "OneDrive",
+            "Windows Defender",
+            "Realtek Audio Manager",
+            "Intel Graphics Command Center",
+            "Google Chrome",
+            "Microsoft Edge",
+            "Dropbox",
+            "Adobe Updater",
+            "Zoom",
+            "Slack"
+        ],
         "open_ports": [
-            49664,
-            49665,
-            49666,
-            49667,
-            61699,
-            49668,
-            61702,
-            7,
-            61703,
-            137,
-            135,
-            9,
-            49675,
-            13,
-            138,
-            139,
-            60432,
-            17,
-            58130,
-            19,
-            49937,
-            61698,
-            63382,
-            60433,
-            64663,
-            64658,
-            62106,
-            63387,
-            63388,
-            61700,
-            63389,
-            63773,
-            63386,
-            64672,
-            546,
-            10010,
-            8099,
-            61701,
-            63783,
-            64553,
-            5040,
-            64691,
-            63384,
-            5050,
-            902,
-            63385,
-            445,
-            64574,
-            64573,
-            63742,
-            69,
-            64710,
-            63698,
-            61697,
-            64476,
-            49764,
-            64744,
-            5353,
-            5355,
-            1900,
-            912,
-            64750,
-            64752,
-            64753,
-            62965,
-            62966,
-            64632,
-            64638
+            {
+                "number": 49667,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 8099,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "remoting"
+            },
+            {
+                "number": 54744,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9912,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16815,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 1900,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 69,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5355,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5353,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9834,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 1900,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5353,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 1900,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 135,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "msrpc"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 7,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "echo"
+            },
+            {
+                "number": 16816,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49666,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5355,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 445,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "microsoft-ds"
+            },
+            {
+                "number": 10216,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57621,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16191,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5040,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 64029,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 55644,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57777,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49665,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 58879,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 1900,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57621,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 7768,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 19,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "chargen"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16650,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57774,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 17,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "qotd"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49664,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5353,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 58880,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 14932,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57779,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 13,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "daytime"
+            },
+            {
+                "number": 1900,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 139,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 55656,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49667,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 1900,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 19,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "chargen"
+            },
+            {
+                "number": 64396,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9841,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16814,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57780,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 13,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "daytime"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 19,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "chargen"
+            },
+            {
+                "number": 138,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16175,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "discard"
+            },
+            {
+                "number": 10010,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 64565,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 55654,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 55641,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 63406,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 1900,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "discard"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16178,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9848,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 7680,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 138,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 55586,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 55560,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 10052,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 137,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9837,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 17,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "qotd"
+            },
+            {
+                "number": 17,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "qotd"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49669,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49664,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 7680,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 42050,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 139,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49668,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 69,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16812,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 55562,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "discard"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 137,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57778,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "discard"
+            },
+            {
+                "number": 13,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "daytime"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 137,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49669,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57776,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9838,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16813,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 135,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "msrpc"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 445,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "microsoft-ds"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 912,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "vmware-auth"
+            },
+            {
+                "number": 5353,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 57775,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 7,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "echo"
+            },
+            {
+                "number": 13,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "daytime"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5050,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 139,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16438,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16321,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 7,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "echo"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 138,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49668,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 7,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "echo"
+            },
+            {
+                "number": 49666,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 59133,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 1900,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 14078,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 16453,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 9840,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 49665,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 64565,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 19,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "chargen"
+            },
+            {
+                "number": 902,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "vmware-auth"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 58028,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 14942,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 5000,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "unknown"
+            },
+            {
+                "number": 17,
+                "state": "open",
+                "risk": "Low Risk",
+                "service": "qotd"
+            }
         ],
-        "unusual_ports": [
-            5353,
-            63783,
-            60432,
-            62966,
-            63388,
-            63382,
-            63387,
-            1900,
-            61703,
-            58130,
-            49667,
-            61702,
-            61699,
-            49668,
-            62106,
-            49665,
-            64574,
-            49675,
-            49666,
-            1900,
-            61700,
-            1900,
-            49675,
-            63389,
-            49937,
-            1900,
-            63773,
-            61698,
-            63386,
-            64573,
-            5050,
-            64553,
-            64744,
-            5355,
-            49668,
-            60433,
-            62965,
-            64638,
-            49764,
-            64663,
-            49666,
-            5353,
-            58130,
-            64691,
-            49667,
-            63698,
-            64672,
-            10010,
-            5355,
-            64750,
-            8099,
-            64476,
-            61701,
-            49664,
-            64632,
-            1900,
-            64710,
-            64658,
-            1900,
-            63384,
-            64753,
-            49664,
-            64752,
-            1900,
-            5040,
-            63385,
-            49665,
-            61697,
-            63742
+        "unusual_ports": [],
+        "failed_digital_signatures": [
+            {
+                "file": "C:\\Bin\\VAPT\\Project\\test\\capture.pcap",
+                "signature_valid": false,
+                "output": "File: C:\\Bin\\VAPT\\Project\\test\\capture.pcap\nIndex  Algorithm  Timestamp    \n========================================\n\nNumber of errors: 1\n\nSignTool Error: This file format cannot be verified because it is not\n\trecognized."
+            },
+            {
+                "file": "C:\\Bin\\VAPT\\Project\\test\\disk.img",
+                "signature_valid": false,
+                "output": "File: C:\\Bin\\VAPT\\Project\\test\\disk.img\nIndex  Algorithm  Timestamp    \n========================================\n\nNumber of errors: 1\n\nSignTool Error: This file format cannot be verified because it is not\n\trecognized."
+            },
+            {
+                "file": "C:\\Bin\\VAPT\\Project\\test\\memory.dmp",
+                "signature_valid": false,
+                "output": "File: C:\\Bin\\VAPT\\Project\\test\\memory.dmp\nIndex  Algorithm  Timestamp    \n========================================\n\nNumber of errors: 1\n\nSignTool Error: This file format cannot be verified because it is not\n\trecognized."
+            },
+            {
+                "file": "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_0.txt",
+                "signature_valid": false,
+                "output": "File: C:\\Bin\\VAPT\\Project\\test\\suspicious_file_0.txt\nIndex  Algorithm  Timestamp    \n========================================\n\nNumber of errors: 1\n\nSignTool Error: This file format cannot be verified because it is not\n\trecognized."
+            },
+            {
+                "file": "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_1.txt",
+                "signature_valid": false,
+                "output": "File: C:\\Bin\\VAPT\\Project\\test\\suspicious_file_1.txt\nIndex  Algorithm  Timestamp    \n========================================\n\nNumber of errors: 1\n\nSignTool Error: This file format cannot be verified because it is not\n\trecognized."
+            },
+            {
+                "file": "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_2.txt",
+                "signature_valid": false,
+                "output": "File: C:\\Bin\\VAPT\\Project\\test\\suspicious_file_2.txt\nIndex  Algorithm  Timestamp    \n========================================\n\nNumber of errors: 1\n\nSignTool Error: This file format cannot be verified because it is not\n\trecognized."
+            },
+            {
+                "file": "C:\\Bin\\VAPT\\Project\\test\\test_file.txt",
+                "signature_valid": false,
+                "output": "File: C:\\Bin\\VAPT\\Project\\test\\test_file.txt\nIndex  Algorithm  Timestamp    \n========================================\n\nNumber of errors: 1\n\nSignTool Error: This file format cannot be verified because it is not\n\trecognized."
+            }
         ],
-        "failed_digital_signatures": [],
         "registry_data": {
             "StartupItems": {
                 "SecurityHealth": "%windir%\\system32\\SecurityHealthSystray.exe",
@@ -161,11 +1637,2166 @@
             "KeePass 2 PreLoad": "\"C:\\Program Files\\KeePass Password Safe 2\\KeePass.exe\" --preload"
         },
         "nmap_vulnerabilities": [],
-        "threat_intelligence": "Simulated threat intelligence risk: 1",
+        "threat_intelligence": "Simulated threat intelligence risk: NIST-calculated",
         "event_log_flags": {
             "windows": [],
             "linux": []
+        },
+        "risk_breakdown": {
+            "network_port_49667_unknown_conn_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_1": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_2": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_8099_remoting_conn_3": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_54744_unknown_conn_4": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_5": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9912_unknown_conn_6": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16815_unknown_conn_7": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_1900_unknown_conn_8": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_9": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_69_unknown_conn_10": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_11": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5355_unknown_conn_12": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5353_unknown_conn_13": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9834_unknown_conn_14": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_15": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_1900_unknown_conn_16": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5353_unknown_conn_17": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_1900_unknown_conn_18": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_19": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_135_msrpc_conn_20": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_21": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_22": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_7_echo_conn_23": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_16816_unknown_conn_24": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49666_unknown_conn_25": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_26": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_27": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5355_unknown_conn_28": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_445_microsoft-ds_conn_29": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_10216_unknown_conn_30": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_31": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_32": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_33": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_34": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_35": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_57621_unknown_conn_36": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16191_unknown_conn_37": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5040_unknown_conn_38": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_64029_unknown_conn_39": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_40": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_41": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_42": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_55644_unknown_conn_43": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_57777_unknown_conn_44": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49665_unknown_conn_45": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_46": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_47": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_48": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_58879_unknown_conn_49": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_50": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_51": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_52": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_53": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_54": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_1900_unknown_conn_55": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_57621_unknown_conn_56": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_57": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_7768_unknown_conn_58": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_59": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_60": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_19_chargen_conn_61": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_62": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_63": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_64": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16650_unknown_conn_65": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_57774_unknown_conn_66": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_67": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_17_qotd_conn_68": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_69": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_70": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49664_unknown_conn_71": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_72": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_73": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_74": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_75": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5353_unknown_conn_76": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_77": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_78": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_79": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_58880_unknown_conn_80": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_14932_unknown_conn_81": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_57779_unknown_conn_82": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_83": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_13_daytime_conn_84": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_1900_unknown_conn_85": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_86": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_87": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_88": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_139_unknown_conn_89": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_55656_unknown_conn_90": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_91": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49667_unknown_conn_92": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_1900_unknown_conn_93": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_94": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_95": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_19_chargen_conn_96": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_64396_unknown_conn_97": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9841_unknown_conn_98": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16814_unknown_conn_99": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_100": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_101": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_102": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_57780_unknown_conn_103": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_13_daytime_conn_104": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_105": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_106": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_107": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_19_chargen_conn_108": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_138_unknown_conn_109": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_110": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_111": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16175_unknown_conn_112": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9_discard_conn_113": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_10010_unknown_conn_114": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_64565_unknown_conn_115": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_116": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_117": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_118": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_119": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_120": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_55654_unknown_conn_121": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_122": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_55641_unknown_conn_123": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_124": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_125": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_63406_unknown_conn_126": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_1900_unknown_conn_127": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_128": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_129": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9_discard_conn_130": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_131": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_132": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16178_unknown_conn_133": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9848_unknown_conn_134": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_7680_unknown_conn_135": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_138_unknown_conn_136": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_137": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_138": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_139": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_55586_unknown_conn_140": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_55560_unknown_conn_141": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_142": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_10052_unknown_conn_143": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_137_unknown_conn_144": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_145": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9837_unknown_conn_146": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_147": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_148": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_17_qotd_conn_149": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_17_qotd_conn_150": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_151": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49669_unknown_conn_152": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_153": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_154": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49664_unknown_conn_155": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_156": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_157": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_158": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_159": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_7680_unknown_conn_160": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_42050_unknown_conn_161": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_139_unknown_conn_162": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_49668_unknown_conn_163": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_164": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_69_unknown_conn_165": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_166": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16812_unknown_conn_167": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_168": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_169": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_55562_unknown_conn_170": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_171": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_172": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9_discard_conn_173": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_174": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_175": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_176": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_137_unknown_conn_177": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_57778_unknown_conn_178": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_179": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9_discard_conn_180": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_13_daytime_conn_181": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_182": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_183": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_137_unknown_conn_184": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_185": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_186": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49669_unknown_conn_187": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_188": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_189": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_190": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_57776_unknown_conn_191": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9838_unknown_conn_192": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16813_unknown_conn_193": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_135_msrpc_conn_194": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_195": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_196": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_197": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_198": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_199": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_445_microsoft-ds_conn_200": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_201": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_202": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_203": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_912_vmware-auth_conn_204": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5353_unknown_conn_205": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_206": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_207": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_57775_unknown_conn_208": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_7_echo_conn_209": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_13_daytime_conn_210": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_211": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_212": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5050_unknown_conn_213": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_214": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_215": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_216": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_139_unknown_conn_217": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_16438_unknown_conn_218": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16321_unknown_conn_219": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_7_echo_conn_220": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_221": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_138_unknown_conn_222": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_223": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_224": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_225": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_226": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_227": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49668_unknown_conn_228": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_7_echo_conn_229": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_49666_unknown_conn_230": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_231": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_59133_unknown_conn_232": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_233": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_1900_unknown_conn_234": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_235": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_236": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_237": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_238": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_239": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_240": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_14078_unknown_conn_241": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_16453_unknown_conn_242": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_243": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_244": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_245": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_9840_unknown_conn_246": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_49665_unknown_conn_247": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_64565_unknown_conn_248": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_19_chargen_conn_249": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_902_vmware-auth_conn_250": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_port_5000_unknown_conn_251": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_58028_unknown_conn_252": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_253": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_254": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_14942_unknown_conn_255": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_256": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_257": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_258": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_5000_unknown_conn_259": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "network_port_17_qotd_conn_260": {
+                "threat": 1,
+                "vulnerability": 2,
+                "impact": 1,
+                "raw_score": 2,
+                "normalized_score": 0.16
+            },
+            "network_too_many_open_ports": {
+                "threat": 3,
+                "vulnerability": 3,
+                "impact": 3,
+                "raw_score": 27,
+                "normalized_score": 2.16
+            },
+            "signature_invalid_file_0": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "signature_invalid_file_1": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "signature_invalid_file_2": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "signature_invalid_file_3": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "signature_invalid_file_4": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "signature_invalid_file_5": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "signature_invalid_file_6": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "registry_unknown_startup_item_0_SecurityHealth": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "registry_unknown_startup_item_1_RtkAudUService": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "registry_unknown_startup_item_2_Riot Vanguard": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "registry_unknown_startup_item_3_KeePass 2 PreLoad": {
+                "threat": 2,
+                "vulnerability": 3,
+                "impact": 2,
+                "raw_score": 12,
+                "normalized_score": 0.96
+            },
+            "nmap_open_port_{'port': 7, 'state': 'open', 'service': 'echo', 'version': ''}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 9, 'state': 'open', 'service': 'discard', 'version': ''}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 13, 'state': 'open', 'service': 'daytime', 'version': ''}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 17, 'state': 'open', 'service': 'qotd', 'version': ''}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 19, 'state': 'open', 'service': 'chargen', 'version': ''}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 135, 'state': 'open', 'service': 'msrpc', 'version': ''}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 445, 'state': 'open', 'service': 'microsoft-ds', 'version': ''}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 902, 'state': 'open', 'service': 'vmware-auth', 'version': '1.10'}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 912, 'state': 'open', 'service': 'vmware-auth', 'version': '1.0'}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "nmap_open_port_{'port': 8099, 'state': 'open', 'service': 'remoting', 'version': ''}_host_0": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            },
+            "threat_intel_simulated": {
+                "threat": 2,
+                "vulnerability": 2,
+                "impact": 2,
+                "raw_score": 8,
+                "normalized_score": 0.64
+            }
         }
     },
-    "timestamp": "2025-03-14T11:38:34.844709"
+    "recommendations": [
+        "Reduce the number of open ports. Disable unused services and restrict ports via firewall.",
+        "Reinstall unsigned or unverified software. Ensure software is from trusted sources.",
+        "Review unknown startup registry items. Disable anything suspicious or unnecessary."
+    ],
+    "forensics": {
+        "file_analysis": {
+            "status": "Analysis complete",
+            "details": "Analyzed 8 files",
+            "files": {
+                "C:\\Bin\\VAPT\\Project\\test\\capture.pcap": {
+                    "path": "C:\\Bin\\VAPT\\Project\\test\\capture.pcap",
+                    "size": 142,
+                    "created": "2025-03-17T21:42:57.650324",
+                    "modified": "2025-03-19T13:57:19.487558",
+                    "accessed": "2025-03-23T20:53:05.542114",
+                    "mime_type": "Unknown",
+                    "hash": {
+                        "md5": "7defef0c81abf5951c5a6ebbf8f411f3",
+                        "sha1": "6a73a34de5c3b7a2293613ad4aead9ab125f6673",
+                        "sha256": "88cc7f3c7f7bf5e82b8c1ba51679e3b695e1c1336072092dce4982996d475e75"
+                    },
+                    "yara_matches": []
+                },
+                "C:\\Bin\\VAPT\\Project\\test\\disk.img": {
+                    "path": "C:\\Bin\\VAPT\\Project\\test\\disk.img",
+                    "size": 199,
+                    "created": "2025-03-17T21:42:57.650324",
+                    "modified": "2025-03-19T13:57:19.487558",
+                    "accessed": "2025-03-23T20:53:05.590255",
+                    "mime_type": "Unknown",
+                    "hash": {
+                        "md5": "173225633cde521f76849b61f83a38c0",
+                        "sha1": "20547bc6dad563db82a591402a4e0c97d3c70ddc",
+                        "sha256": "8d46c6caa63704b44c7fba19a4980c5de5a7f269c0452a229417bf1d9b66f8c5"
+                    },
+                    "yara_matches": []
+                },
+                "C:\\Bin\\VAPT\\Project\\test\\memory.dmp": {
+                    "path": "C:\\Bin\\VAPT\\Project\\test\\memory.dmp",
+                    "size": 470,
+                    "created": "2025-03-17T21:42:57.649322",
+                    "modified": "2025-03-19T13:57:19.486565",
+                    "accessed": "2025-03-23T20:53:05.637796",
+                    "mime_type": "Unknown",
+                    "hash": {
+                        "md5": "55853b31201b23e62e5a4342209edf08",
+                        "sha1": "bd52af6d3c04b88e01c12573aba390655612e37c",
+                        "sha256": "9fff7ac4dfb0c8f95c283803a68108a630a7f2b2aadc403ec59a62dc0c23fe31"
+                    },
+                    "yara_matches": []
+                },
+                "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_0.txt": {
+                    "path": "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_0.txt",
+                    "size": 50,
+                    "created": "2025-03-19T13:57:19.484563",
+                    "modified": "2025-03-19T13:57:19.484563",
+                    "accessed": "2025-03-23T20:53:05.686080",
+                    "mime_type": "text/plain",
+                    "hash": {
+                        "md5": "2d2b6d158d1d622e4273622b84996b31",
+                        "sha1": "1fc8f51b3549bea8d6466d1783b455a3eb2d2153",
+                        "sha256": "4ec215b491dbdc2aff7ff037998edc89366e6084499604f08db0c683b154bdf2"
+                    },
+                    "yara_matches": []
+                },
+                "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_1.txt": {
+                    "path": "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_1.txt",
+                    "size": 50,
+                    "created": "2025-03-19T13:57:19.485547",
+                    "modified": "2025-03-19T13:57:19.485547",
+                    "accessed": "2025-03-23T20:53:05.732206",
+                    "mime_type": "text/plain",
+                    "hash": {
+                        "md5": "2d2b6d158d1d622e4273622b84996b31",
+                        "sha1": "1fc8f51b3549bea8d6466d1783b455a3eb2d2153",
+                        "sha256": "4ec215b491dbdc2aff7ff037998edc89366e6084499604f08db0c683b154bdf2"
+                    },
+                    "yara_matches": []
+                },
+                "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_2.txt": {
+                    "path": "C:\\Bin\\VAPT\\Project\\test\\suspicious_file_2.txt",
+                    "size": 50,
+                    "created": "2025-03-19T13:57:19.485547",
+                    "modified": "2025-03-19T13:57:19.486565",
+                    "accessed": "2025-03-23T20:53:05.777973",
+                    "mime_type": "text/plain",
+                    "hash": {
+                        "md5": "2d2b6d158d1d622e4273622b84996b31",
+                        "sha1": "1fc8f51b3549bea8d6466d1783b455a3eb2d2153",
+                        "sha256": "4ec215b491dbdc2aff7ff037998edc89366e6084499604f08db0c683b154bdf2"
+                    },
+                    "yara_matches": []
+                },
+                "C:\\Bin\\VAPT\\Project\\test\\test_file.txt": {
+                    "path": "C:\\Bin\\VAPT\\Project\\test\\test_file.txt",
+                    "size": 30,
+                    "created": "2025-03-17T21:29:42.806414",
+                    "modified": "2025-03-17T21:29:42.809414",
+                    "accessed": "2025-03-23T20:53:05.824884",
+                    "mime_type": "text/plain",
+                    "hash": {
+                        "md5": "af4241ded05b0f44f3872dbce6a9efad",
+                        "sha1": "51063d79a2131f7b8da667f7e861a3bcc4813bfa",
+                        "sha256": "c5dd4830f5ed3f9f0fcca6aa66e8d9ab3d389a2cf80226e85768bfdd040ca4bb"
+                    },
+                    "yara_matches": []
+                },
+                "C:\\Bin\\VAPT\\Project\\test\\vfcompat.dll": {
+                    "path": "C:\\Bin\\VAPT\\Project\\test\\vfcompat.dll",
+                    "size": 67312,
+                    "created": "2025-03-21T11:22:59.267127",
+                    "modified": "2025-01-24T18:46:36",
+                    "accessed": "2025-03-23T20:53:05.878002",
+                    "mime_type": "application/x-msdownload",
+                    "hash": {
+                        "md5": "2012bcd1ab71a8edfb9ea0c1ad938fde",
+                        "sha1": "4c2e005caec7fd34d86e87b09daf6ecdde44aeab",
+                        "sha256": "699650f8d34826c197c1c481ebb2dbb9f8d8132436b5816d063d857208afeb50"
+                    },
+                    "yara_matches": []
+                }
+            }
+        },
+        "memory_analysis": {
+            "status": "Volatility3 not installed",
+            "details": "Volatility3 binary not found in PATH",
+            "findings": {}
+        },
+        "network_forensics": {
+            "connections": [],
+            "status": "Analysis complete",
+            "details": "Analyzed network capture: C:\\Bin\\VAPT\\Project\\test\\capture.pcap"
+        },
+        "disk_analysis": {
+            "status": "Analysis complete",
+            "details": "Analyzed disk image: C:\\Bin\\VAPT\\Project\\test\\disk.img",
+            "artifacts": {
+                "System32.dll": {
+                    "Size": "512KB",
+                    "Created": "2023-01-01",
+                    "Modified": "2023-01-02",
+                    "Risk": "High",
+                    "Indicators": "Suspicious DLL injection"
+                },
+                "autorun.inf": {
+                    "Size": "5KB",
+                    "Created": "2022-12-25",
+                    "Modified": "2022-12-26",
+                    "Risk": "Medium",
+                    "Indicators": "Auto-execution setup"
+                },
+                "tempfile.tmp": {
+                    "Size": "50KB",
+                    "Created": "2023-02-10",
+                    "Modified": "2023-02-11",
+                    "Risk": "Low",
+                    "Indicators": "Temporary file"
+                }
+            }
+        },
+        "malware_indicators": {},
+        "timeline": [],
+        "risk_score": 22
+    },
+    "timestamp": "2025-03-23T20:56:09.256243"
 }

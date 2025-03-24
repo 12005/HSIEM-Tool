@@ -3,7 +3,7 @@ import psutil
 import platform
 import subprocess
 import nmap
-
+from forensics.config_forensics import TEST_DIR
 from utils import verify_digital_signature
 
 if platform.system() == "Windows":
@@ -131,14 +131,31 @@ class DataCollector:
                     "SourceName": ev_obj.SourceName,
                     "EventCategory": ev_obj.EventCategory,
                     "EventType": ev_obj.EventType,
+                    "Message": str(ev_obj.StringInserts) if ev_obj.StringInserts else "No message",
+                    "Level": self._get_event_level(ev_obj.EventType)
                 }
                 logs.append(entry)
                 count += 1
                 if count >= max_entries:
                     break
+            win32evtlog.CloseEventLog(hand)
         except Exception as e:
-            logs.append({"error": str(e)})
+            print(f"Error reading Windows event log {log_type}: {str(e)}")
+            logs.append({
+                "error": f"Failed to read {log_type} log: {str(e)}",
+                "requires_admin": "Access is denied" in str(e)
+            })
         return logs
+
+    def _get_event_level(self, event_type):
+        levels = {
+            1: "Error",
+            2: "Warning",
+            4: "Information",
+            8: "Success",
+            16: "Critical"
+        }
+        return levels.get(event_type, "Unknown")
 
     def grab_linux_logs(self, log_file="/var/log/auth.log", max_lines=100):
         logs = []
@@ -153,11 +170,24 @@ class DataCollector:
 
     def collect_event_logs(self):
         if platform.system() == "Windows":
-            self.data['event_logs'] = {
-                "Security": self.grab_windows_event_logs("Security"),
-                "System": self.grab_windows_event_logs("System"),
-                "Application": self.grab_windows_event_logs("Application")
-            }
+            try:
+                import ctypes
+                is_admin = ctypes.windll.shell32.IsUserAnAdmin()
+                if not is_admin:
+                    self.data['event_logs'] = {
+                        "error": "Administrative privileges required to read Security logs"
+                    }
+                    return self.data['event_logs']
+                
+                self.data['event_logs'] = {
+                    "Security": self.grab_windows_event_logs("Security"),
+                    "System": self.grab_windows_event_logs("System"),
+                    "Application": self.grab_windows_event_logs("Application")
+                }
+            except Exception as e:
+                self.data['event_logs'] = {
+                    "error": f"Failed to collect event logs: {str(e)}"
+                }
         else:
             self.data['event_logs'] = {
                 "auth.log": self.grab_linux_logs("/var/log/auth.log"),

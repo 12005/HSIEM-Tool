@@ -3,10 +3,12 @@ import json
 import threading
 import schedule
 import time
+import datetime
 from flask import Flask
 
 from collector import DataCollector
 from assessment import VulnerabilityAssessment
+from forensics.forensic_analyzer import ForensicAnalyzer
 from dashboard import create_dashboard
 
 app = Flask(__name__)
@@ -17,34 +19,70 @@ def run_scan():
     """Perform a full scan and update the latest report."""
     global latest_report
     collector = DataCollector()
-    collected_data = collector.collect_all()
-    assessment = VulnerabilityAssessment(collected_data)
-    assessment.compute_risk_score()
-    latest_report.update(assessment.get_report())
+    collector = DataCollector()
+    try:
+        collected_data = collector.collect_all()
+    except Exception as e:
+        print("[!] Data Collection Error:", str(e))
+        collected_data = {"error": "Failed to collect system data", "exception": str(e)}
 
-    with open("system_report.json", "w") as f:
-        json.dump(latest_report, f, indent=4)
+    
+    # Add forensic analysis
+    print("Starting forensic analysis...")
+    try:
+        forensic_analyzer = ForensicAnalyzer()
+        forensic_results = forensic_analyzer.analyze_all()
+    except Exception as e:
+        print("[!] Forensic Analysis Error:", str(e))
+        forensic_results = {
+            "status": "Forensic analysis failed",
+            "error": str(e)
+        }
+
+    print("Forensic analysis results:", json.dumps(forensic_results, indent=2))
+    
+    # Update risk score from forensics
+    if 'risk_score' in forensic_results:
+        collected_data['forensic_risk_score'] = forensic_results['risk_score']
+    
+    collected_data['forensics'] = forensic_results
+    try:
+        assessment = VulnerabilityAssessment(collected_data)
+        assessment.compute_risk_score()
+        latest_report.update(assessment.get_report())
+    except Exception as e:
+        print("[!] Assessment Error:", str(e))
+        latest_report.update({
+            "risk_score": -1,
+            "severity": "Error",
+            "details": {"error": str(e)},
+            "timestamp": datetime.datetime.now().isoformat()
+        })
+
+    try:
+        with open("system_report.json", "w") as f:
+            json.dump(latest_report, f, indent=4)
+    except Exception as e:
+        print("[!] Failed to save system_report.json:", str(e))
     print(f"Scan complete at {latest_report['timestamp']}, Risk Score: {latest_report['risk_score']}")
     
     # Append latest report to history
     history_file = "risk_history.json"
-    if os.path.exists(history_file):
-        with open(history_file, "r") as f:
-            history = json.load(f)
-    else:
-        history = []
-
-    history.append({
-        "timestamp": latest_report["timestamp"],
-        "risk_score": latest_report["risk_score"]
-    })
-
-    # Keep only latest 50 entries
-    history = history[-50:]
-
-    with open(history_file, "w") as f:
-        json.dump(history, f, indent=4)
-
+    try:
+        if os.path.exists(history_file):
+            with open(history_file, "r") as f:
+                history = json.load(f)
+        else:
+            history = []
+        history.append({
+            "timestamp": latest_report["timestamp"],
+            "risk_score": latest_report["risk_score"]
+        })
+        history = history[-50:]
+        with open(history_file, "w") as f:
+            json.dump(history, f, indent=4)
+    except Exception as e:
+        print("[!] Failed to update risk history:", str(e))
 
 def scheduled_scan():
     run_scan()
